@@ -1,7 +1,7 @@
 # suma.py
 
 # Función que suma dos números
-def sumar(a, b):
+def sumar(a, bb):
     return a + b
 
 # Dos variables con números a elección
