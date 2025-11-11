@@ -1,0 +1,22 @@
+name: code test
+
+on:
+  push
+
+jobs:
+  lint:
+    runs-on: ubuntu-latets
+    
+    permissions:
+     security-events: write
+
+    steps:
+    - name: descargar codigo
+      uses: actions/checkout@v5
+
+    - name: analizar codigo
+      uses: advanced-security/python-lint-code-scanning-action@v1
+      with:
+        linter: pylint
+        
+
